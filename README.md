@@ -28,7 +28,7 @@ You can drag existing vertices to change their position. To do so, you must be *
 
 Press h/s/b to enter Hue/Saturation/Brightness mode. Then press UP/DOWN to change the corresponding HSB value of the active rectangle
 
-####HSB Definition
+#### HSB Definition
 
 * **Hue** refers to the 'color' in the rainbow sense, moving from red through yellow through; green through blue through purple through red, looping around again.
 * **Saturation** refers to the intensity of the color. high saturation means intense color,low saturation means washed out or black and white.    
