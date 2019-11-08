@@ -189,7 +189,11 @@ void ofApp::mousePressed(int x, int y, int button){
 
     lastVertex[activeRect]++;
     numVertices++;
-    if (lastVertex[activeRect] >= (activeRect + 1) * 4) lastVertex[activeRect] = activeRect * 4;
+    if (lastVertex[activeRect] >= (activeRect + 1) * 4) {
+      lastVertex[activeRect] = activeRect * 4;
+      activeMode = 0;
+      ofLogNotice() << "Done adding four vertices, switching to Active Mode: HUE";
+    }
     if (numVertices > MAX_RECTS * 4) numVertices = MAX_RECTS * 4;
   } else {
     for (int i = 0; i < numVertices; i++){
